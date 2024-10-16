@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface NewRepository extends JpaRepository<WordEntity, Long> {
     // Define custom query methods here
+    WordEntity findByWord(String Word);
 }

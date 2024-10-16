@@ -29,6 +29,9 @@ public class NewService {
         if(is_palindromo(s) == true){
             we.setIs_palindrome(true);
         }else we.setIs_palindrome(false);
+        if(newRepository.findByWord(s) == null){
+            we.setExists(false);
+        }else we.setExists(true);
       newRepository.save(we);
     }
 

@@ -16,6 +16,15 @@ public class WordEntity {
     private Boolean is_odd;
     private Boolean is_palindrome;
     private Boolean contains_number;
+    private Boolean exists;
+
+    public Boolean getExists() {
+        return exists;
+    }
+
+    public void setExists(Boolean exists) {
+        this.exists = exists;
+    }
 
     public Long getId() {
         return id;
